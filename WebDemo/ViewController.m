@@ -23,6 +23,10 @@
     self.title = @"WebDemo";
     self.view.backgroundColor = [UIColor whiteColor];
     
+#if DEBUG
+    self.view.backgroundColor = [UIColor lightGrayColor];
+#endif
+    
     [self createSubViews];
    // [self cacheDirectory];
 }
